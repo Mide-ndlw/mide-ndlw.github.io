@@ -10,7 +10,13 @@
     <link rel="icon" href="icon-smlxx.ico" type="image/x-icon">
     <link rel="shortcut icon" href="icon-smlxx.ico" type="image/x-icon">
     <script>
-document.getElementByClass("demo").innerHTML = "Hello JavaScript!";
+var int=self.setInterval("clock()",1000);
+function clock()
+{
+var d=new Date();
+var t=d.toLocaleTimeString();
+document.getElementsByClassName("time")[0].innerText=t;
+}
 </script>
 </head>
 
